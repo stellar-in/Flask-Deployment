@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+
+<body class="bg-body-tertiary">
+    <p>
+    <h3>These posts are available:</h3>
+    </p>
+
+    <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+        <div class="list-group">
+            {% for m in menu %}
+            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32"
+                    class="rounded-circle flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                        <h6 class="mb-0">{{ m.title }}</h6>
+                        <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+                    </div>
+                    <small class="opacity-50 text-nowrap">now</small>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <p>
+    <h3>Add New Post Today -- ANPT</h3>
+    </p>
+
+
+    <div class="row g-5">
+        <form action="{{url_for('install')}}" method="post" class="form-contrast">
+            <p><label>Post name </label><input type="text" value="" name="name"></p>
+            <p><label>URL post </label><input type="text" value="" name="url"></p>
+            <p><label>Text</label></p>
+            <p><textarea name="post" rows=7 cols=40></textarea></p>
+            <p><input type="submit" value="Add"></p>
+        </form>
+    </div>
+</body>
+
+{% endblock %}

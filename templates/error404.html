@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+
+<h2> Ой извините y нас такой страницы нема </h2>
+<p>Go back to the <a href="{{url_for('index')}}">home</a> page please! </p>
+
+{% endblock %}
