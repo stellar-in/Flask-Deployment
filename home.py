@@ -32,12 +32,16 @@ def get_db():
         g.link_db = connect_db()
     return g.link_db
 
+dbase = None
+@app.before_request
+def data_db():
+    global dbase
+    db = get_db()
+    dbase = FDataBase(db)
 
 @app.route("/")
 def index():
     print(url_for("index"))
-    db = get_db()
-    dbase = FDataBase(db)
     return render_template("index.html", title="Home page", menu=dbase.getMenu(), posts=dbase.getPostsAnonce())
 
 @app.route("/learn")
@@ -47,45 +51,35 @@ def learn():
 
 @app.route("/install", methods=["POST", "GET"])
 def install():
-    db = get_db()
-    dbase = FDataBase(db)
     if request.method == "POST":
         res = dbase.addPost(request.form["name"], request.form["post"], request.form["url"])
 
     return render_template("install.html", title="Add new Post!", menu=dbase.getMenu())
 
-
 @app.route("/post/<alias>")
 def showPost(alias):
-    db = get_db()
-    dbase = FDataBase(db)
     title, post = dbase.getPost(alias)
     if not title:
         abort(404)
     
     return render_template("post.html", menu=dbase.getMenu(), title=title, post=post)
 
-
 @app.route("/more")
 def more():
     return "<h1>More right here</h1>"
 
-
 @app.route("/profile/<username>")
 def profile(username):
     return f"Good afternoon {username}!"
-
 
 @app.teardown_appcontext
 def close_db(error):
     if hasattr(g, 'link_db'):
         g.link_db.close()
 
-
 @app.errorhandler(404)
 def pageNotFound(error):
     return render_template("error404.html", title="Oops, Error"), 404   
-
 
 if __name__ == "__main__":
     app.run(debug=True)
