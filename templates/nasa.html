@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exoplanets</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header_container container">
+            <div class="explore">
+                <a href="{{ url_for('index') }}">Explore</a>
+                <img class="arrow" src="images/arrowdown.png" alt="">
+                <input type="text" placeholder="Search...">
+            </div>
+            <img class="logo" src="images/logo.png" alt="">
+            <div class="Events">
+                <ul>
+                    <li><a href="#">Events <img class="arrow" src="images/arrowdow1.png" alt=""></a></li>
+                    <li><a href="#">Multimedia <img class="arrow" src="images/arrowdow1.png" alt=""></a></li>
+                </ul>
+                <p class="live">LIVE</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="describe">
+            <div class="describe_container container">
+                <div class="describe_content">
+                    <div class="describe_txt">
+                        <h1>Every star that you see in the sky might be a Sun for someone.</h1>
+                        <p>Exoplanet is a natural planet in a planetary system outside our own Solar System.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <img class="SS" src="images/SS.PNG" alt="">
+                </div>
+                <div class="describe_down">
+                    <div class="describe_down1">
+                        <p class="p1">HISTORY</p>
+                        <p class="p2">Nasa Broadcasts<img src="images/arrowup.png" alt=""></p>
+                    </div>
+                    <div class="describe_down1">
+                        <p class="p1">HISTORY</p>
+                        <p class="p2">Nasa Broadcasts<img src="images/arrowup.png" alt=""></p>
+                    </div>
+                    <div class="describe_down1">
+                        <p class="p1">HISTORY</p>
+                        <p class="p2">Nasa Broadcasts<img src="images/arrowup.png" alt=""></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news_container container">
+            <h1>Featured News</h1>
+            <div class="news_images">
+                <a href="https://science.nasa.gov/science-news/">
+                    <div class="astronaut">
+                        <div class="article">
+                            <img src="images/saved.png" alt="">
+                            <p class="p3">ARTICLE</p>
+                        </div>
+                        <div class="article_down">
+                            <p class="p4">4 MIN READ</p>
+                            <p class="p5">Alien remains found</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://science.nasa.gov">
+                    <div class="milkway">
+                        <div class="article">
+                            <img src="images/saved.png" alt="">
+                            <p class="p3">ARTICLE</p>
+                        </div>
+                        <div class="article_down">
+                            <p class="p4">2 MIN READ</p>
+                            <p class="p5">Alien remains found</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="information">
+            <div class="inf_container container">
+                <div class="inf_content">
+                    <h1>Information about exoplanets</h1>
+                    <p>Exoplanets are planets that orbit stars outside our solar system. The first confirmed exoplanet
+                        was discovered in 1992, and thousands have since been identified using methods like transit,
+                        radial velocity, and direct imaging. They vary in size and composition, including gas giants,
+                        rocky planets, and ice giants. Some are in the "habitable zone," where liquid water might exist,
+                        suggesting potential for life.</p>
+                </div>
+                <img src="images/mars-153566_640.png" alt="">
+            </div>
+        </div>
+        <div class="more_container container">
+            <h1>More topics</h1>
+            <div class="more_images">
+                <div class="more_content">
+                    <div class="more_img">
+                        <div class="img_txt">
+                            <p>Missions</p>
+                            <img src="images/arrowup.png" alt="">
+                        </div>
+                    </div>
+                    <div class="more_img1">
+                        <div class="img_txt">
+                            <p>Missions</p>
+                            <img src="images/arrowup.png" alt="">
+                        </div>
+                    </div>
+                    <div class="more_img2">
+                        <div class="img_txt">
+                            <p>Missions</p>
+                            <img src="images/arrowup.png" alt="">
+                        </div>
+                    </div>
+                    <div class="more_img3">
+                        <div class="img_txt">
+                            <p>Missions</p>
+                            <img src="images/arrowup.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="more_content">
+                    <div class="more_img4">
+                        <div class="img_txt">
+                            <p>Missions</p>
+                            <img src="images/arrowup.png" alt="">
+                        </div>
+                    </div>
+                    <div class="more_img5">
+                        <div class="img_txt">
+                            <p>Missions</p>
+                            <img src="images/arrowup.png" alt="">
+                        </div>
+                    </div>
+                    <div class="more_img6">
+                        <div class="img_txt">
+                            <p>Missions</p>
+                            <img src="images/arrowup.png" alt="">
+                        </div>
+                    </div>
+                    <div class="more_img7">
+                        <div class="img_txt">
+                            <p>Missions</p>
+                            <img src="images/arrowup.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explore1">
+            <div class="explore1_container container">
+                <h1>Explore the Universe from your Inbox</h1>
+                <p class="p6">Stay up-to-date on the latest news from NASA–from Earth to the Moon, the Solar System and
+                    beyond.</p>
+                <p class="p7">We will never share your email address. <span>Privacy Policy</span></p>
+                <a href="#">Sign Up <img src="images/arrowup.png" alt=""></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_container container">
+            <div class="content1">
+                <img src="images/logo.png" alt="">
+                <h4>National Aeronautics and Space Administration</h4>
+                <p>NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the
+                    world through discovery.</p>
+                <a href="#">About NASA's Mission</a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Multimedia</a></li>
+                <li><a href="#">NASA+</a></li>
+                <li><a href="#">Missions</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Humans in Space</a></li>
+                <li><a href="#">Earth & Climate</a></li>
+                <li><a href="#">The Solar System</a></li>
+                <li><a href="#">The Universe+</a></li>
+                <li><a href="#">Science</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Aeronautics</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Learning Resources</a></li>
+                <li><a href="#">About NASA</a></li>
+                <li><a href="#">NASA on Spanish</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

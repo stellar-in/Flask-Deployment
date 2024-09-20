@@ -46,7 +46,7 @@ def index():
 
 @app.route("/learn")
 def learn():
-    return "<h1>Learn right here</h1>"
+    return render_template("nasa.html", title="NASA")
 
 
 @app.route("/install", methods=["POST", "GET"])
