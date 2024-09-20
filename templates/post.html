@@ -2,7 +2,5 @@
 
 {% block content %}
 {{ super() }}
-<h1>{{ title }}</h1>
-<h2>{{ post | safe }}</h2>
-
+{{ post | safe }}
 {% endblock %}
