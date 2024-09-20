@@ -1,7 +1,7 @@
 /* body{
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(..//images/earth-moon.webp);
+    background-image: url(..//images_html/earth-moon.webp);
     /* backdrop-filter: blur(65px); */
 *{
     margin: 0;
@@ -87,7 +87,7 @@ header{
 .describe{
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(..//images/earth-moon.webp);
+    background-image: url(..//images_html/earth-moon.webp);
     color: white;
 }
 .describe_container{
@@ -163,7 +163,7 @@ header{
 }
 .astronaut{
     background: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)), /* Градиент */url(..//images/astronaut.png); 
+    linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)), /* Градиент */url(..//images_html/astronaut.png); 
 
     background-size: 60%;
     background-repeat: no-repeat;
@@ -208,7 +208,7 @@ header{
     letter-spacing: 1px;
 }
 .milkway{
-    background: url(..//images/milkway.webp); 
+    background: url(..//images_html/milkway.webp); 
 
     background-size: 30%;
     background-repeat: no-repeat;
@@ -220,7 +220,7 @@ header{
 }
 .information{
     background: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)), /* Градиент */url(..//images/bg.jpg); 
+    linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)), /* Градиент */url(..//images_html/bg.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -266,7 +266,7 @@ header{
     margin-left: 10px;
 }
 .more_img{
-    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images/mission.webp);
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images_html/mission.webp);
     width: 250px;
     background-position: center;
     height: 370px;
@@ -276,7 +276,7 @@ header{
     padding: 20px;
 }
 .more_img1{
-    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images/topic-humans-in-space.webp);
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images_html/topic-humans-in-space.webp);
     width: 250px;
     background-position: center;
     height: 370px;
@@ -286,7 +286,7 @@ header{
     padding: 20px;
 }
 .more_img2{
-    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images/icescapepondsample-lrg-jpg.webp);
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images_html/icescapepondsample-lrg-jpg.webp);
     width: 250px;
     background-position: center;
     background-size: 200%;
@@ -297,7 +297,7 @@ header{
     padding: 20px;
 }
 .more_img3{
-    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images/solar-system-illustration-16x9-1.webp);
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images_html/solar-system-illustration-16x9-1.webp);
     width: 250px;
     background-position: center;
     background-size: 280%;
@@ -320,7 +320,7 @@ header{
     font-weight: 600;
 }
 .more_img4{
-    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images/universe.webp);
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images_html/universe.webp);
     width: 250px;
     background-position: center;
     background-size: 280%;
@@ -331,7 +331,7 @@ header{
     padding: 20px;
 }
 .more_img5{
-    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images/science.webp);
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images_html/science.webp);
     width: 250px;
     background-position: center;
     background-size: 180%;
@@ -342,7 +342,7 @@ header{
     padding: 20px;
 }
 .more_img6{
-    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images/aero-topic-card.webp);
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images_html/aero-topic-card.webp);
     width: 250px;
     background-position: center;
     background-size: 120%;
@@ -353,7 +353,7 @@ header{
     padding: 20px;
 }
 .more_img7{
-    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images/nasa_technology1.webp);
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.818), rgba(254, 254, 254, 0)),  url(..//images_html/nasa_technology1.webp);
     width: 250px;
     background-position: center;
     background-size: 300%;
@@ -369,7 +369,7 @@ header{
     gap: 40px;
 }
 .explore1{
-    background-image: url(..//images/webb-tarantula-neb.webp);
+    background-image: url(..//images_html/webb-tarantula-neb.webp);
     height: 500px;
 }
 .explore1_container{
